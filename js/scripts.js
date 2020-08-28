@@ -17,7 +17,7 @@ function Pizza(size, crust, selectedToppings) {
 }
 
 // Topping Cost Calculator
-PizzaMaker.prototype.toppingsCharge = function(j){
+Pizza.prototype.toppingsCharge = function(j){
   var toppingsCharge = 0;
   for (var i = 0; i < pizzasOrdered[j].toppings.length; i++) {
       toppingsCharge += 0.5;
@@ -29,6 +29,7 @@ PizzaMaker.prototype.toppingsCharge = function(j){
   }
   return toppingsCharge;
 }
+
 function addToppings(n){
   for (var i = 0; i < selectedToppings.length; i++) {
       // pizzasOrdered[n].toppings.push(selectedToppings[i]);
@@ -41,32 +42,33 @@ function addPizza(pizza){
 function totalCostCalculator(){
   var charges = 0;
   for (var i = 0; i < pizzasOrdered.length; i++) {
-      if(pizzasOrdered[i].pSize === "Small"){charges += 10}
-      else if(pizzasOrdered[i].pSize === "Medium"){charges += 15}
-      else if(pizzasOrdered[i].pSize === "Large"){charges += 20}
+      if(pizzasOrdered[i].pSize === "Small"){charges += 12}
+      else if(pizzasOrdered[i].pSize === "Medium"){charges += 14}
+      else if(pizzasOrdered[i].pSize === "Large"){charges += 16}
       charges += pizzasOrdered[i].toppingsCharge(i);
   }
   return charges;
 }
-//Function to disable and enable gaming areas according to which player is active.
-
-//Function on what is to happen when the dice is rolled.
 
 
 //User Interface Logic Start
 $(document).ready(function() {
-//function for name submission
-  var numOfToppingsAvailable = 28;
-  
-
-  });
-
+// Calculate Total
+$('.btn-success').click(function(event){
+  event.preventDefault();
+  var total = totalCostCalculator();
+  $('#create-order').hide();
+  $('#checkout').show();
+  for (var i = 0; i < pizzasOrdered.length; i++) {
+      if(i > 0){$('#order-detail').append('<h6>and</h6>');}
+      $('#order-detail').append('<h4><strong>A ' + pizzasOrdered[i].pSize + ' ' + pizzasOrdered[i].pStyle + ' ' + pizzasOrdered[i].pizzaType + ':</strong></h4>');
+      if(pizzasOrdered[i].toppings.length > 0){
+          $('#order-detail').append('<p><em>topped with</em> <br> <small>' + pizzasOrdered[i].toppings + '</small></p>')
+      };
+  };
+  $('#order-total').append('<h4>Your total comes to $' + total + '</h4>');
+});
 });
 
 
-
-
-
-
 //Function to reset the form input fields, re-enable the buttons, reset the scores to 0.
-
