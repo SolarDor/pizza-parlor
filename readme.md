@@ -1,17 +1,17 @@
-# Pig Dice
+# Pizza Parlor
 
-### _Webpage that uses objects and constructors to emulate a Pig Dice game, 26 August 2020_
+### _Webpage that uses objects, constructors, and prototypes to populate a price on a pizza, 28 August 2020_
 
-#### By _**Cameron Will <cellardoorsolar@aol.com>, Emme Buentiempo <emmettbuentiempo@gmail.com>**_
+#### By _**Cameron Will <cellardoorsolar@aol.com>**_
 
 # Description
 
-_This is a webpage project to practice using objects, constructors, and prototypes to create a playable Pig Dice game._
+_This is a webpage project to practice using objects, constructors, and prototypes to emulate the pizza cost calculator._
 
 ## Specs for Program Behaviors
-1.[X] **Take input from user for player 1 and player 2 names, and when submitted, append to each player's scorecard and display player 1 button group.**
-### Input: "Emme" "Cameron" *click submit*
-### Output: *Display player 1 name on player 1 scorecard* *Display player 2 name on player 2 scorecard* *Display player 1 button group*
+1.[X] **Take input from user for name and append to order total.**
+### Input: *Cameron*
+### Output: *Display: "Thank you, Cameron, your total today is "$ "*
 
 2.[X] **When player 1 clicks player 1 roll button, diceroll function is activated, dice pulls random number from 1-6, and appends result on player 1's scorecard under turnTotal section.**
 ### Input: *Click* "Roll" button
@@ -46,8 +46,8 @@ _This is a webpage project to practice using objects, constructors, and prototyp
 
 * _open terminal_
 * _type "cd desktop", then press enter_
-* _type "git clone https://github.com/solardor/pigdice", then press enter_
-* _locate and open folder on desktop named "pigdice"_
+* _type "git clone https://github.com/solardor/pizza-parlor", then press enter_
+* _locate and open folder on desktop named "pizza-parlor"_
 * _open the file named "index.html"_
 
 ## Known Bugs
