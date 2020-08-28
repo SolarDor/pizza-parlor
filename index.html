@@ -29,22 +29,23 @@
           </div>
           <input type="image" src="img/Pizza.jpeg" name="pizzaButton" class="btTxt submit" id="pizzaButton" />
       </form>
-      <form id="makeYourPizza">
+      <form id="createYourPizza">
         <div class="row">
             <div class="col-xs-6">
-                <h3>Choose a size</h3>
-                <input class="size" type="radio" name="size" value="Small" required> Small<small>-$10</small><br>
-                <input class="size" type="radio" name="size" value="Medium" required> Medium<small>-$15</small><br>
-                <input class="size" type="radio" name="size" value="Large" required> Large<small>-$20</small><br>
+                <h2>All Pies are Served with a Robust Sicilian Tomato Sauce</h2>
+                <h3>Choose a Size</h3>
+                <input class="size" type="radio" name="size" value="Small" required> Small<small>-$12</small><br>
+                <input class="size" type="radio" name="size" value="Medium" required> Medium<small>-$14</small><br>
+                <input class="size" type="radio" name="size" value="Large" required> Large<small>-$16</small><br>
             </div>
             <div class="col-xs-6">
-                <h3>Choose a style</h3>
+                <h3>Choose a Crust Style</h3>
                 <input class="type" type="radio" name="type" value="Thin Crust" required> Thin crust<br>
                 <input class="type" type="radio" name="type" value="Hand Tossed" required> Hand Tossed<br>
                 <input class="type" type="radio" name="type" value="Deep-Dish" required> Square deep-dish<br>
             </div>
         </div>
-        <h3>Select your toppings<sup><small>(<span class="hot">&#127798;</span>=hot)</small></sup><small>-50 cents for sm, 75 cents for md, $1 for lg</small></h3>
+        <h3>Select your toppings</h3>
         <div class="row">
             <div class="col-xs-3">
                 <input type="checkbox" name="topping" value="Extra Cheese" id="0">Extra Cheese<br>
@@ -60,7 +61,7 @@
                 <input type="checkbox" name="topping" value="Black Olives" id="8">Black olives<br>
                 <input type="checkbox" name="topping" value="Spinach" id="9">Spinach<br>
                 <input type="checkbox" name="topping" value="Tomato" id="10">Tomato<br>
-                <input type="checkbox" name="topping" value="Jalapeno<span class='hot'>&#127798;</span>" id="11">Jalapeno<span class="hot">&#127798;</span><br>
+                <input type="checkbox" name="topping" value="Jalapeno" id="11">Jalapeno<br>
                 <input type="checkbox" name="topping" value="Garlic" id="12">Garlic<br>
                 <input type="checkbox" name="topping" value="Sausage" id="13">Sausage<br>
             </div>
@@ -79,11 +80,11 @@
                 <input type="checkbox" name="topping" value="Broccoli" id="23">Broccoli<br>
                 <input type="checkbox" name="topping" value="Ham" id="24">Ham<br>
                 <input type="checkbox" name="topping" value="Wild Mushrooms" id="25">Wild Mushrooms<br>
-                <input type="checkbox" name="topping" value="Smoked Oyster" id="26">Smoked-Oysters<br>
+                <input type="checkbox" name="topping" value="Smoked Oysters" id="26">Smoked-Oysters<br>
                 <input type="checkbox" name="topping" value="Pickles" id="27">Pickles<br>
             </div>
         </div>
-        <br><button type="submit" class="button btn-danger btn-lg" id="addPizza">Add <span id="another-pizza">Another </span>Pizza</button>
+        <button type="submit" class="button btn-danger btn-lg" id="orderPizza"></button>
         <div class="checkout-button">
             <br><button class="btn-success" type="button" name="button">Submit Order</button>
         </div>

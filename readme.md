@@ -14,7 +14,7 @@ _This is a webpage project to practice using objects, constructors, and prototyp
 ### Output: *Display: "Thank you, Cameron, your total today is "$ "*
 
 2.[] **Customer selects one of four possible pizza sizes. This initializes the base pizza price and begins a running order price.**
-### Input: *Select* "Large 16"
+### Input: *Select* "Medium"
 ### Output: Initialize base price of $14.
 
 3.[] **Customer selects one of three pizza crust styles, order price is increased according to style.**
