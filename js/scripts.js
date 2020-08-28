@@ -25,7 +25,10 @@ function Pizza(size, crust, selectedToppings) {
 $(document).ready(function() {
 //function for name submission
   $("#nameInputForm").submit(function(event) {
-    const firstNameInput = $("input#fullName").val();
+    const firstNameInput = $("input#firstName").val();
+    const lastNameInput = $("input#lastName").val();
+
+    
 
 
 
