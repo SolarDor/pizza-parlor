@@ -9,15 +9,19 @@
 _This is a webpage project to practice using objects, constructors, and prototypes to emulate the pizza cost calculator._
 
 ## Specs for Program Behaviors
-1.[X] **Take input from user for name and append to order total.**
+1.[X] **Take input from customer for name and append to order total after fields are selected and submit button is pressed.**
 ### Input: *Cameron*
 ### Output: *Display: "Thank you, Cameron, your total today is "$ "*
 
-2.[X] **When player 1 clicks player 1 roll button, diceroll function is activated, dice pulls random number from 1-6, and appends result on player 1's scorecard under turnTotal section.**
-### Input: *Click* "Roll" button
-### Output: player1.roll = 3. player1.turnTotal = 3. player1.overallScore = 0.
+2.[] **Customer selects one of four possible pizza sizes. This initializes the base pizza price and begins a running overall price.**
+### Input: *Select* "Large 16"
+### Output: Initialize base price of $14.
 
-3.[X] **If dice value is 1, transform value of player1 turn total to 0. If rolled dice value is greater than 1, then rolled dice value is added to player1 turn total and appends result on player 1's scorecard under turnTotal section.**
+3.[X] **Customer selects one of three pizza crust styles, overall price is increased according to style.**
+### Input: *Select* "Chicago-Style"** 
+### Output: Overall price increased by $2.00.
+
+4.[X] **Customer selects**
 ### Input: *Click roll button* *roll = 5* *Click roll button* *roll = 1*
 ### Output: turnTotal = 0
 
