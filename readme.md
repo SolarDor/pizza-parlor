@@ -9,23 +9,23 @@
 _This is a webpage project to practice using objects, constructors, and prototypes to emulate the pizza cost calculator._
 
 ## Specs for Program Behaviors
-1.[X] **Take input from customer for name and append to order total after fields are selected and submit button is pressed.**
+1.[] **Take input from customer for name and append to order total after fields are selected and submit button is pressed.**
 ### Input: *Cameron*
 ### Output: *Display: "Thank you, Cameron, your total today is "$ "*
 
-2.[] **Customer selects one of four possible pizza sizes. This initializes the base pizza price and begins a running overall price.**
+2.[] **Customer selects one of four possible pizza sizes. This initializes the base pizza price and begins a running order price.**
 ### Input: *Select* "Large 16"
 ### Output: Initialize base price of $14.
 
-3.[X] **Customer selects one of three pizza crust styles, overall price is increased according to style.**
+3.[] **Customer selects one of three pizza crust styles, order price is increased according to style.**
 ### Input: *Select* "Chicago-Style"** 
-### Output: Overall price increased by $2.00.
+### Output: Order price increased by $2.00.
 
-4.[X] **Customer selects**
-### Input: *Click roll button* *roll = 5* *Click roll button* *roll = 1*
-### Output: turnTotal = 0
+4.[] **Customer selects additional toppings, price is increased for each additional topping**
+### Input: *Select* Pepperoni +$2, *Select* Mushrooms +$1.5, *Select* Black Olives +$1.5.
+### Output: Order Price
 
-4.[X] **After every dice roll, check value of player1 turn total. If value is 0, make no adjustments to player 1 score, clear the player 1 turn total section, hide the player 1 button group and show the player 2 button group**
+4.[] **After every dice roll, check value of player1 turn total. If value is 0, make no adjustments to player 1 score, clear the player 1 turn total section, hide the player 1 button group and show the player 2 button group**
 ### Input: *Click roll button* *roll = 5* *Click roll button* *roll = 1*
 ### Output: player1.overallScore = 0
 
