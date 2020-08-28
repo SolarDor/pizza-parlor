@@ -3,9 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
 <body>
-  
+  <div class="start-menu container">
+    <div class="jumbotron" style="background-image: url(img/paulette.jpg); background-size: 100%;">
+      <span id="blinkingHeadline">
+      <h1>Paulette's Bend & Snap Pizza & Ros&eacute;</h1>
+      </span>
+      <form id="nameInputForm" class="form-group">
+          <h3></h3>
+          <div class="row" id="nameText">
+              <section class="col-md-6">
+                  <label for="firstname">First Name</label>
+                  <input type="text" required id="firstNameInput" class="form-control">
+              </section>
+              <section class="col-md-6">
+                  <label for="last">Last Name</label>
+                  <input type="text" required id="lastNameInput" class="form-control">
+              </section>
+          </div>
+          <input type="image" src="img/Pizza.jpeg" name="pizzaButton" class="btTxt submit" id="pizzaButton" />
+      </form>
+    </div>
+  </div>
 </body>
 </html>
