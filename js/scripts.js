@@ -27,12 +27,17 @@ $(document).ready(function() {
   $("#nameInputForm").submit(function(event) {
     const firstNameInput = $("input#firstName").val();
     const lastNameInput = $("input#lastName").val();
+    $("#createYourPizza").show();
+    $("#pizzaButton").hide();
 
-    
+  });
+
+});
+
 
 
 
 
 
 //Function to reset the form input fields, re-enable the buttons, reset the scores to 0.
-function resetFields() {
+

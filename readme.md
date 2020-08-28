@@ -13,6 +13,10 @@ _This is a webpage project to practice using objects, constructors, and prototyp
 ### Input: *Cameron*
 ### Output: *Display: "Thank you, Cameron, your total today is "$ "*
 
+2.[] **Forms to customize a pizza appear after enter name and clicking Pizza Button**
+### Input: *Click* Pizza Button
+### Output: Name input forms and pizza button hide. Pizza customization forms show.
+
 2.[] **Customer selects one of four possible pizza sizes. This initializes the base pizza price and begins a running order price.**
 ### Input: *Select* "Medium"
 ### Output: Initialize base price of $14.
