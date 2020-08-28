@@ -9,6 +9,10 @@
   width: 15%;
 }
 
+#makeYourPizza {
+  display: none;
+}
+
 h1 {
   color: whitesmoke;
   font-weight: bold;
