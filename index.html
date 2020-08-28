@@ -29,6 +29,65 @@
           </div>
           <input type="image" src="img/Pizza.jpeg" name="pizzaButton" class="btTxt submit" id="pizzaButton" />
       </form>
+      <form id="custom-pizza">
+        <div class="row">
+            <div class="col-xs-6">
+                <h3>Choose a size</h3>
+                <input class="size" type="radio" name="size" value="Small" required> Small<small>-$10</small><br>
+                <input class="size" type="radio" name="size" value="Medium" required> Medium<small>-$15</small><br>
+                <input class="size" type="radio" name="size" value="Large" required> Large<small>-$20</small><br>
+            </div>
+            <div class="col-xs-6">
+                <h3>Choose a style</h3>
+                <input class="type" type="radio" name="type" value="Thin Crust" required> Thin crust<br>
+                <input class="type" type="radio" name="type" value="Hand Tossed" required> Hand Tossed<br>
+                <input class="type" type="radio" name="type" value="Deep-Dish" required> Square deep-dish<br>
+            </div>
+        </div>
+        <h3>Select your toppings<sup><small>(<span class="hot">&#127798;</span>=hot)</small></sup><small>-50 cents for sm, 75 cents for md, $1 for lg</small></h3>
+        <div class="row">
+            <div class="col-xs-3">
+                <input type="checkbox" name="topping" value="Extra Cheese" id="0">Extra Cheese<br>
+                <input type="checkbox" name="topping" value="Pepperoni" id="1">Pepperoni<br>
+                <input type="checkbox" name="topping" value="Prosciutto" id="2">Prosciutto<br>
+                <input type="checkbox" name="topping" value="Artichoke" id="3">Artichoke<br>
+                <input type="checkbox" name="topping" value="Sun-Dried Tomato" id="4">Sun-dried tomatos<br>
+                <input type="checkbox" name="topping" value="Banana Peppers" id="5">Banana peppers<br>
+                <input type="checkbox" name="topping" value="Spicy Salami" id="6">Spicy Salami<span class="hot">&#127798;</span><br>
+            </div>
+            <div class="col-xs-3">
+                <input type="checkbox" name="topping" value="Lettuce" id="7">Lettuce<br>
+                <input type="checkbox" name="topping" value="Black Olives" id="8">Black olives<br>
+                <input type="checkbox" name="topping" value="Spinach" id="9">Spinach<br>
+                <input type="checkbox" name="topping" value="Tomato" id="10">Tomato<br>
+                <input type="checkbox" name="topping" value="Jalapeno<span class='hot'>&#127798;</span>" id="11">Jalapeno<span class="hot">&#127798;</span><br>
+                <input type="checkbox" name="topping" value="Garlic" id="12">Garlic<br>
+                <input type="checkbox" name="topping" value="Sausage" id="13">Sausage<br>
+            </div>
+            <div class="col-xs-3">
+                <input type="checkbox" name="topping" value="Mushrooms" id="14">Mushrooms<br>
+                <input type="checkbox" name="topping" value="Anchovies" id="15">Anchovies<br>
+                <input type="checkbox" name="topping" value="Onions" id="16">Onions<br>
+                <input type="checkbox" name="topping" value="Pineapple" id="17">Pineapple<br>
+                <input type="checkbox" name="topping" value="Green Olives" id="18">Green olives<br>
+                <input type="checkbox" name="topping" value="Bacon" id="19">Bacon<br>
+                <input type="checkbox" name="topping" value="Ground Beef" id="20">Ground beef<br>
+            </div>
+            <div class="col-xs-3">
+                <input type="checkbox" name="topping" value="Green Bell Peppers" id="21">Green bell peppers<br>
+                <input type="checkbox" name="topping" value="Chicken" id="22">Chicken<br>
+                <input type="checkbox" name="topping" value="Broccoli" id="23">Broccoli<br>
+                <input type="checkbox" name="topping" value="Ham" id="24">Ham<br>
+                <input type="checkbox" name="topping" value="Wild Mushrooms" id="25">Wild Mushrooms<br>
+                <input type="checkbox" name="topping" value="Smoked Oyster" id="26">Smoked-Oysters<br>
+                <input type="checkbox" name="topping" value="Pickles" id="27">Pickles<br>
+            </div>
+        </div>
+        <br><button type="submit" class="button btn-danger btn-lg" id="addPizza">Add <span id="another-pizza">Another </span>Pizza</button>
+        <div class="checkout-button">
+            <br><button class="btn-success" type="button" name="button">Submit Order</button>
+        </div>
+    </form>
     </div>
   </div>
 </body>
